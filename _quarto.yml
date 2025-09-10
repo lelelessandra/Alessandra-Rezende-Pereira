@@ -5,7 +5,7 @@ website:
   title: " "
   navbar:
     left:
-      - href: about.qmd
+      - href: index.qmd
         text: Home
       - href: timeline.qmd
         text: Time Line
