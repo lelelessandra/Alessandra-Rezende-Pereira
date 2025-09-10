@@ -1,0 +1,88 @@
+---
+title: ""
+format: html
+---
+
+```{=html}
+<!-- Importando as fontes -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libertinus+Serif&display=swap" rel="stylesheet">
+
+<style>
+/* Fundo com imagem e transparência */
+body {
+  background: url("images/background.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Libertinus Serif', serif; /* Fonte do corpo */
+  color: #000; /* texto preto */
+  line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255,255,255,0.1); /* branco 50% transparente */
+  z-index: -1;
+}
+
+.research-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.research-container h2, 
+.research-container h1, 
+.research-container h3, 
+.research-container h4 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: 'Playfair Display', serif; /* Fonte dos títulos */
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.research-item {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem; /* ajuste no tamanho do texto */
+}
+
+.research-item a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.research-item a:hover {
+  text-decoration: underline;
+}
+</style>
+
+```
+
+:::::::: research-container
+<h2>Published Research</h2>
+
+::: research-item
+<strong>Pereira, A. R., Torres, F. T. P., & Berlinck, C. N. (2025).</strong> Ecological implications of the direct effects of fire on neotropical vertebrates. <em>*Science of the Total Environment*</em>*, 979*, 179437. <a href="https://doi.org/10.1016/j.scitotenv.2025.179437" target="_blank">Link</a>
+:::
+
+::: research-item
+<strong>Soldati, G. T., Pereira, A. R., da Silva, R. H., de Moura, J. M. B., Costa, H. C., & da Silva Chaves, L. (2024).</strong> Why Is the Frequency of a Risk More Important than Its Severity in Retaining Adaptive Information? A Multilevel Analysis of Human Evolution Using Snakes as Models. <em>*Biological Theory*</em>, *19(3)*, 209-219. <a href="https://doi.org/10.1007/s13752-024-00465-5" target="_blank">Link</a>
+:::
+
+::: research-item
+<strong>dos Santos Andrade, C. A., Pereira, A. R., Salvio, G. M. M., & da Silveira Junior, W. J. (2023).</strong> Conflitos Fundiários em Unidades de Conservação: Estudo de Caso da Parte Baixa do Parque Nacional do Itatiaia. <em>*Biodiversidade Brasileira*</em>*, 13(1)*, 01-14. <a href="https://doi.org/10.37002/biodiversidadebrasileira.v13i1.2307" target="_blank">Link</a>
+:::
+
+::: research-item
+<strong>Pereira, A. R., & Junior, W. J. S. (2023). </strong> Conflitos Socioambientais em Áreas Protegidas Brasileiras: Causas, Consequências e Iniciativas de Gestão. <em>*Biodiversidade Brasileira*</em>*, 13(3)*, 1-16. <a href="https://doi.org/10.37002/biodiversidadebrasileira.v13i3.2338" target="_blank">Link</a>
+:::
+
+::: research-item
+<strong>Pereira, A. R., da Silva Novato, T., de Carvalho, R. H., Novelli, I. A., & de Sousa, B. M. (2020)</strong> Saberes Populares sobre <em>Hydromedusa maximiliani</em> (Mikan, 1820) (Testudines, Chelidae): uma abordagem no entorno de uma Unidade de Conservação urbana em Minas Gerais. <em>*Ethnoscientia-Brazilian Journal of Ethnobiology and Ethnoecology*</em>, 5(1), 1-10. <a href="http://dx.doi.org/10.18542/ethnoscientia.v5i1.10288" target="_blank">Link</a>
+:::
+::::::::

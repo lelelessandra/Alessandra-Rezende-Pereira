@@ -1,0 +1,15 @@
+{
+  "hash": "346f0a27b2020744f6f796ca1ac6366b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"About\"\nformat:\n  html:\n    css: styles.css\n---\n\n\n\n\n<div class=\"about-container\">\n\n<img src=\"images/photo.jpeg\" class=\"profile-pic\" alt=\"Minha Foto\">\n\n<p class=\"about-text\">\nI am <b>Alessandra Rezende Pereira</b>, a Brazilian biologist, specialist in Protected Areas and Master in Forest Science. I work with research in Fire Ecology, Protected Areas and Biodiversity Conservation and I am interested in community resilience and the influence of climate change on the landscape and fire regimes.\n</p>\n\n<div class=\"social-links\">\n  <a href=\"https://www.researchgate.net/profile/Alessandra-Pereira-4\" target=\"_blank\">ResearchGate</a> ·\n  <a href=\"https://www.linkedin.com/in/alessandra-rezende-pereira-52a095b2\" target=\"_blank\">LinkedIn</a> ·\n  <a href=\"https://x.com/ArpEcology\" target=\"_blank\">X</a>\n</div>\n\n</div>\n\n<style>\n/* Fundo com imagem e transparência */\nbody {\n  background: url(\"images/background.jpeg\") no-repeat center center fixed;\n  background-size: cover;\n}\n\nbody::before {\n  content: \"\";\n  position: fixed;\n  top: 0; left: 0;\n  width: 100%; height: 100%;\n  background-color: rgba(255,255,255,0.5); /* branco 50% transparente */\n  z-index: -1;\n}\n\n/* Centralização do conteúdo */\n.about-container {\n  text-align: center;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 2rem;\n}\n\n/* Foto circular */\n.profile-pic {\n  width: 200px;\n  height: 200px;\n  border-radius: 50%;\n  object-fit: cover;\n  margin-bottom: 1rem;\n  box-shadow: 0 0 15px rgba(0,0,0,0.3);\n}\n\n/* Texto */\n.about-text {\n  font-size: 1.1rem;\n  line-height: 1.6;\n  margin-bottom: 1rem;\n}\n\n/* Links sociais */\n.social-links a {\n  margin: 0 0.5rem;\n  text-decoration: none;\n  font-weight: bold;\n  color: #2c3e50;\n}\n\n.social-links a:hover {\n  color: #0077b5; /* cor de hover, azul LinkedIn */\n}\n</style>\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

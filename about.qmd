@@ -1,0 +1,137 @@
+---
+title: ""
+format:
+  html:
+    css: styles.css
+---
+
+:::: about-container
+<img src="images/photo.jpeg" alt="Minha Foto" class="profile-pic"/>
+
+<p class="about-text">
+
+I am <b>Alessandra Rezende Pereira</b>, a Brazilian biologist, specialist in Protected Areas and Master in Forest Science. I work with research in Fire Ecology, Protected Areas and Biodiversity Conservation and I am interested in community resilience and the influence of climate change on the landscape and fire regimes.
+
+I enjoy transforming scientific knowledge into accessible knowledge. I have expertise in scientific research and writing, combining ecological data analysis with clear communication, figures, and visual representations that translate complex information intuitively. I believe in teamwork as a path to generating richer and more innovative results.
+
+**Contact**: alessandra.ecologia\@gmail.com
+
+</p>
+
+::: social-links
+<a href="https://www.researchgate.net/profile/Alessandra-Pereira-4" target="_blank">ResearchGate</a> · <a href="https://www.linkedin.com/in/alessandra-rezende-pereira-52a095b2" target="_blank">LinkedIn</a> · <a href="https://x.com/ArpEcology" target="_blank">X</a>
+:::
+::::
+
+```{=html}
+<!-- Importando as fontes -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libertinus+Serif&display=swap" rel="stylesheet">
+
+<style>
+/* Fundo com imagem e transparência */
+body {
+  background: url("images/background.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Libertinus Serif', serif;
+  line-height: 1.6;
+  color: black;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255,255,255,0.7); 
+  z-index: -1;
+}
+
+/* Centralização do conteúdo */
+.about-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Foto circular animada */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transform: scale(0.8);
+  opacity: 0;
+  animation: popIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* Texto animado com contorno branco */
+.about-text,
+.about-text b,
+.about-text i,
+.about-text span {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: black;
+  font-family: 'Libertinus Serif', serif;
+
+  /* Keep fully opaque for stroke */
+  opacity: 1;  
+
+  /* Animation only on position */
+  transform: translateY(20px);
+  animation: slideUp 1s ease-out forwards;
+  animation-delay: 0.8s;
+
+  /* Contorno branco */
+  -webkit-text-stroke: 1px white; /* Chrome, Edge, Safari */
+  text-shadow:
+    1px 1px 0 white,
+   -1px 1px 0 white,
+    1px -1px 0 white,
+   -1px -1px 0 white;
+}
+
+/* Links sociais animados */
+.social-links a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  opacity: 0;
+  color: black; 
+  transform: translateY(10px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  font-family: 'Playfair Display', serif;
+}
+
+.social-links a:nth-child(1) { animation-delay: 1.2s; }
+.social-links a:nth-child(2) { animation-delay: 1.4s; }
+.social-links a:nth-child(3) { animation-delay: 1.6s; }
+
+.social-links a:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  color: black;
+}
+
+/* Keyframes */
+@keyframes slideUp {
+  from { transform: translateY(30px); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to   { opacity: 1; transform: scale(1); }
+}
+</style>
+```
